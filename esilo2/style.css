@@ -14,6 +14,10 @@
     margin: 0px;
 }
 
+p {
+    display: inline-block;
+}
+
 html, body {
     min-height: 100vh;
     background-color: darkgray;
@@ -36,34 +40,44 @@ header > p {
 }
 
 section {
-    font-family: var(--fonte2);
-    padding: 10px 10px 10px 30px;
+    padding-top: 10vh;
+    padding-left: 30px;
+    padding-bottom: 10vh;
+    background-color: rgba(114, 115, 115, 0.427);
+    color: black;
+    border: 1px solid rgb(0, 0, 0);
     line-height: 2em;
-    font-size: 2.5vw;
+    font-size: 2vw;
+    font-weight: bolder;
+    font-family: var(--fonte2);
 }
 
-section.imagem {
-    
-}
-
-.normal {
-    background-color: var(--cor2);
-}
-
-.imagem {
+section.normal {
     background-color: var(--cor1);
+    color: white;
+}
+
+section.recebe_img {
+    display: inline-block;
+    background-color: var(--cor1);
+    height: 100vh;
+    width: 100%;
+    color: black;
 }
 
 #img1 {
-
+    background: black url(../espantas_lore/gusta2.jpg) right center no-repeat fixed;
+    background-size: cover;
 }
 
 #img2 {
-
+    background: black url(../espantas_lore/ledao.jpg) right center no-repeat fixed;
+    background-size: cover;
 }
 
-img3 {
-
+#img3 {
+    background: black url(../espantas_lore/tentaiva1.jpg) center center no-repeat fixed;
+    background-size: cover;
 }
 
 footer {
