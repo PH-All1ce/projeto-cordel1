@@ -41,13 +41,13 @@ header > p {
 
 section {
     padding-top: 10vh;
-    padding-left: 30px;
+    padding-left: 20px;
     padding-bottom: 10vh;
     background-color: rgba(114, 115, 115, 0.427);
     color: black;
     border: 1px solid rgb(0, 0, 0);
     line-height: 2em;
-    font-size: 2vw;
+    font-size: 2.8vw;
     font-weight: bolder;
     font-family: var(--fonte2);
 }
@@ -58,11 +58,15 @@ section.normal {
 }
 
 section.recebe_img {
-    display: inline-block;
     background-color: var(--cor1);
     height: 100vh;
     width: 100%;
     color: black;
+}
+
+section.recebe_img > p {
+    display: inline-block;
+    padding: 10px;
 }
 
 #img1 {
