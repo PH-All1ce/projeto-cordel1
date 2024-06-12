@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -24,9 +25,31 @@
             color: white;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: darkgray;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         .num {
             text-align: right;
         }
+
+        #tab1 {
+            margin-bottom: 30px;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
     </style>
 </head>
 <body>
@@ -34,6 +57,7 @@
     <!--
         Anatomia para tabelas grandes
         TABLE
+            CAPTION
             THEADER
                 TH, TD, TH
             TBODY
@@ -41,11 +65,12 @@
             TFOOT
                 TH, TD, TH
     -->
-    <table>
+    <table id="tab1">
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -64,7 +89,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>0000</strong></td>
             </tr>
         </tfoot>
